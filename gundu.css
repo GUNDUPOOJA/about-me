@@ -1,22 +1,19 @@
 
     body{
         margin: 0;
-        background-image: url("./index.html");
-        background-size :cover;
-        background-repeat :no-repeat, repeat;
-        background-position :center;
+        background-size :100% 200%;
+        background-repeat :no-repeat;
         width: 100%;
-          position: relative;
+     position: relative;
 }
-#profile_pic{
+img{
     border-radius: 50%;
-    max-width: 0%;
-    display: block;
-    flex-basis: 20%;
+    width: 300px;
+    height: 300px
 }
 #main_header{
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     text-align: center;
     font-size: 35px;
 }
@@ -41,21 +38,23 @@ ul{
     padding :0px;
     list-style: none;
 }
- ul li  {
+ nav ul li  {
+     display : inline-block;
  background-color:  #2b9c8d;
- float:left;
- width : 200px;
- height :40px;
+ padding: 10px;
+ flex-basis: 28%;
+ width : 400px;
+ height :50px;
  opacity: .8;
- line-height : 40px;
+ line-height : 60px;
  text-align: center;
- font-size: 20px;
+ font-size: 40px;
 
 }
 ul li a {
       color:  #9ebfb3;
       text-decoration: none;
-      display : block;
+      display : inline block;
 }
 ul li a:hover{
     background-color: green;
@@ -73,7 +72,7 @@ hr{
 
     flex-basis:100%;
     margin: 6px;
-    border-width: 6pt;
+    border-width: 8px;
     border-radius: 9px;
     border-style: solid;
     color: #257da0;
@@ -91,7 +90,7 @@ article {
     flex-basis: 75%;
 }
 aside {
-    flex-basis:50%;
+    float: basis 25%;
 
 }
 aside a {
@@ -138,6 +137,7 @@ footer {
       font-family: 'Courier New', Courier, monospace;
       text-align: center;
       font-size: 24px;
+
 }
 form{
     display: flex;
@@ -162,7 +162,7 @@ form input[type="submit"]{
      text-align: center;
      color: whitesmoke;
      text-transform: uppercase;
-     margin-left: 60%;
+     margin-left: 45%;
 
 }
 #contact_heading {
@@ -188,10 +188,7 @@ nav {
     
  }
 
- #profile_pic {
-     flex-basis: 80%;
-
- }
+ 
 .navLinks {
     flex-basis: 100%;
     flex-wrap: wrap;
@@ -215,10 +212,10 @@ form {
 }
 
 
-input[type=text], select, textarea {
+input[type=text], textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px gray solid;
+    padding: 12px 30px;
+    border: none rgb(4, 30, 59);
     border-radius: 24px;
     box-sizing: border-box;
     margin: 6px 0 16px 0;
@@ -254,17 +251,3 @@ label {
     padding:0 0 10px 0;
     font-size: 20px;
 }
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-  }
