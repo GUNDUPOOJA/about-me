@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pounds to Kilograms Weight Converter</title>
+    <link rel="stylesheet" type="text/css" href="gundu.css">
+</head>
+
+<body>
+
+
+    <h2>Weight Converter</h2>
+    <p> Type a value in the pounds field to convert the value to Kilograms:</p>
+
+    <p>
+        <label>Pounds</label>
+        <input id="inputPounds" type="number" placeholder="Pounds" oninput=" weightConverter(this.value)"
+            onchange="weightConverter(this.value)">
+
+    </p>
+    <p>Kilograms: <span id="outputKilograms"></span></p>
+
+
+    <script>
+        function weightConverter(valNum) {
+            document.getElementById("outputKilograms").innerHTML = valNum / 2.2046;
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
