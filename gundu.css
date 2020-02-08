@@ -126,7 +126,7 @@ footer {
 
     background-color: #bb3a3a;
     width : 100%;
-    height: 20vh;
+    height: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,27 +144,11 @@ form{
     flex-wrap: wrap;
     flex-basis: 80%;
     padding: 20px;
-    justify-content: center;
+    justify-content:left;
 }
-form label1, input[type="text"],input[type="email"], textarea {
-          margin : 5px;
-          padding: 10px;
-          resize : none;
-          flex-basis: 45%;
-}
-form label1 {
-    text-align:right;
-}        
-form input[type="submit"]{
-    border:none;
-    background-color: blueviolet
-     padding 16px 75px;
-     text-align: center;
-     color: whitesmoke;
-     text-transform: uppercase;
-     margin-left: 45%;
-
-}
+form label {
+    text-align:left;
+}       
 #contact_heading {
 text-align: center;
 flex-basis: 100%;
@@ -212,43 +196,45 @@ form {
 }
 
 
-input[type=text], textarea {
+label, input[type="text"],input[type="email"],textarea{
     width: 100%;
-    padding: 12px 30px;
-    border: none rgb(4, 30, 59);
-    border-radius: 24px;
+    padding: 15px 20px ;
+    border: none rgb( 65, 60, 70);
+    border-radius: 30px;
+    flex-basis: 70%;
     box-sizing: border-box;
-    margin: 6px 0 16px 0;
-    resize: vertical;
+    margin: 10px ;
+    resize: none;
 }
-input[type=submit] {
+  input[type="submit"] {
     background-color: white;
     color: black;
-    font-size: 30px;
-    padding: 15px 45px;
-    border: none black solid;
+    font-size: 25px;
+    padding: 16px 75px;
+    border: none;
     cursor: pointer;
     border-radius: 24px;
-    cursor: pointer;
+    margin-left: 45%;
 }
-input[type=submit]:hover {
+input[type="submit"]:hover {
     
     background-color: crimson;
-}
-textarea {
-    height: 150px;
 }
 .container {
     padding : 0 20% 3% 20%;
 }
 
 label {
-    margin-left: 30px;
+    margin-left: 10px;
     flex-basis: 100%;
     border:1px solid blue
     background-color purple;
     color: green;
-    padding:0 0 10px 0;
-    font-size: 20px;
+    padding:0 0 8px 0;
+    font-size: 40px;
 }
-
+input text{
+     height: 100px;
+     width : 75px;
+     text-align: left;
+}
